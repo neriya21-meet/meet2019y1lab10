@@ -157,7 +157,11 @@ turtle.register_shape(p9)
 turtle_9 = turtle.clone()
 turtle_9.shape(p9)
 
-list_pieces[p1,p2,p3,p4,p5,p6,p7,p8,p9]
+#list_pieces[p1,p2,p3,p4,p5,p6,p7,p8,p9]
+#turtle = Turtle()
+#screen = Screen()
+turtle_1.onscreen(turtle.goto)
+turtle_1.getscreen()._root.mainloop()
 
 turtle.mainloop
 
