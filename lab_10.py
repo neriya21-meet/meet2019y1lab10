@@ -119,6 +119,7 @@ turtle.register_shape(p1)
 turtle_1 = turtle.clone()
                               	#new turtle for piece num1
 turtle_1.shape(p1)
+turtle_1.shape(p1)
 
 turtle.register_shape(p2)
 turtle_2 = turtle.clone()
@@ -160,8 +161,23 @@ turtle_9.shape(p9)
 #list_pieces[p1,p2,p3,p4,p5,p6,p7,p8,p9]
 #turtle = Turtle()
 #screen = Screen()
-turtle_1.onscreen(turtle.goto)
-turtle_1.getscreen()._root.mainloop()
+turtle.penup()
+#turtle = Turtle()
+#screen = Screen()
+turtle.onscreenclick(turtle.goto)
+turtle.getscreen()._root.mainloop()
+
+def distance(x1, x2, y1, y2):
+    distance= sqrt((y2-y1)**2 + (x2-x1)**2)
+    return distance
+
+
+def check_puzzle_pos(click_x, click_y, square_x, square_y):
+    distance= sqrt((y2-y1)**2 + (x2-x1)**2)
+    if distance < 15:
+        return True
+    else:
+        return False
 
 turtle.mainloop
 
